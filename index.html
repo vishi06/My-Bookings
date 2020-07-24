@@ -23,6 +23,9 @@ font-family: 'Montserrat', sans-serif bold;
 font-size: 30px;
 color:white;
 }
+ .modal {
+  background-color:#2ECAB6;
+}
  h2{
 font-family: 'Montserrat', sans-serif bold;
 font-size: 25px;
@@ -33,9 +36,6 @@ h3{ font-family: 'Montserrat', sans-serif;
 
 .img{
 	height:50px;
-}
- .modal {
-  background-color:#2ECAB6;
 }
 
 .content{
@@ -160,7 +160,7 @@ i , h1{
 
 		</div>
 		<div class="content">
-		<h3 >Property Name: Sundar apartments</h3>
+		<h3 >Property Name: Imperial house apartments</h3>
 		<br>
 		<h3 >Booked on: 08:14 AM 08/02/2020</h3>
 		<br>
@@ -190,7 +190,7 @@ i , h1{
 	<div class="card shadow-lg p-3 mb-5 bg-white rounded" style="width:50%; margin:0 auto;">
 <div class="card-body">
 		<div class="card-title" style="background-color: #2EC4B6;">
-			<h2 style="font-size:30px; margin-left:10px;" >Previous Bookings</h2>
+			<h2 style="font-size:30px; margin-left:10px;" >Previous Bookings<h2>
 
 		</div>
 		<div class="content">
@@ -198,14 +198,52 @@ i , h1{
 		<br>
 		<h3>Booked on:23/5/2020</h3>
 		<br>
-		<h3 >Booked for:6/3/2021</h3>
+            <h3>Moved out:24/5/2020</h3>
 		<br>
-		<h3>Payment:Not Recieved</h3>
+
 		</div>
 
 <div class="temp">
-<button class="button"><span>Move Out date</span></button>
+
 <button class="button" data-toggle="modal" data-target="#myModal"><span>Feedback</span></button>
+    <div class="modal" id="myModal">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h3 class="modal-title">Your Feedback is important</h3>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+         <form class="was-validated">
+  <div class="mb-3">
+    <label for="validationTextarea">Write your Review</label>
+    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Write something" required></textarea>
+    <div class="invalid-feedback">
+      Please enter a message in the textarea.
+    </div>
+      <div class="rate">&nbsp;
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+      <button class="button"  data-dismiss="modal">Submit</button>
+  </div>
+         </form>
+        </div>
+      </div>
+    </div>
+  </div>
 	</div>
 
 
@@ -397,48 +435,8 @@ i , h1{
   </div>
         </div>
       </div>
-    </div>
-</div>
-</form
 
 
-  <div class="modal" id="myModal">
-    <div class="modal-dialog modal-dialog-scrollable">
-      <div class="modal-content">
 
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h3 class="modal-title">Your Feedback is important</h3>
-          <button type="button" class="close" data-dismiss="modal">×</button>
-        </div>
-
-        <!-- Modal body -->
-        <div class="modal-body">
-         <form class="was-validated">
-  <div class="mb-3">
-    <label for="validationTextarea">Write your Review</label>
-    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Write something" required></textarea>
-    <div class="invalid-feedback">
-      Please enter a message in the textarea.
-    </div>
-      <div class="rate">&nbsp;
-    <input type="radio" id="star5" name="rate" value="5" />
-    <label for="star5" title="text">5 stars</label>
-    <input type="radio" id="star4" name="rate" value="4" />
-    <label for="star4" title="text">4 stars</label>
-    <input type="radio" id="star3" name="rate" value="3" />
-    <label for="star3" title="text">3 stars</label>
-    <input type="radio" id="star2" name="rate" value="2" />
-    <label for="star2" title="text">2 stars</label>
-    <input type="radio" id="star1" name="rate" value="1" />
-    <label for="star1" title="text">1 star</label>
-  </div>
-      <button class="button"  data-dismiss="modal">Submit</button>
-  </div>
-         </form>
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
 </html>
